@@ -72,6 +72,10 @@ During the setup :
 
 3. Meanwhile, the reverse proxy (Caddy) will automatically request a valid SSL certificate from Let's Encrypt for your domain and serve it to incoming HTTPS requests.
 
+4. When the domain validation is complete, the containers (apache, nextcloud master container, database, redis etc...) will start automatically
+
+5. Enjoy !
+
 Important: Make sure that TCP port 443 is open and accessible from the Internet; otherwise, domain validation and certificate issuance will fail and you won't be able to go to the next step of the setup.
 
 # Useful Commands
